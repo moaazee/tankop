@@ -61,7 +61,7 @@ class _TankOpState extends State<TankOp> {
               onPressed: () {
                 // opdaterer vores balance når man trykker på add
                 setState(() {
-                  userBalance += double.parse(_textController.text);
+                  userBalance += double.tryParse(_textController.text);
                 });
               },
               color: Colors.blue,
